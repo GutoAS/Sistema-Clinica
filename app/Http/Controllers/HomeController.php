@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 
@@ -20,5 +21,20 @@ class HomeController extends Controller
         } else {
             return redirect()->back();
         }
+    }
+
+    public function index(){
+        return view('user.home');
+    }
+
+    public function logout(Request $request): RedirectResponse {
+    Auth::logout();
+ 
+    $request->session()->invalidate();
+ 
+    $request->session()->regenerateToken();
+ 
+    return redirect('/');
+
     }
 }
