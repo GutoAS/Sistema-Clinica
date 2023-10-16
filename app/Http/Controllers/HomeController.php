@@ -12,7 +12,7 @@ class HomeController extends Controller
         if(Auth::id()){
 
             if(Auth::user()->tipo_usuario == "0"){
-                return view('dashboard');
+                return view('user.home');
             } else {
                 return view('admin.home');
             }
