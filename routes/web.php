@@ -17,6 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::('/home',[HomeController::class,'redirect'])
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
