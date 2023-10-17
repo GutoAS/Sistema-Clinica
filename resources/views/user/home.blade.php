@@ -182,29 +182,29 @@
         <div class="item">
           <div class="card-doctor">
             <div class="header">
-              <img src="../assets/img/doctors/doctor_1.jpg" alt="">
+              <img src="../assets/img/doctors/doctor_1.png" alt="">
               <div class="meta">
                 <a href="#"><span class="mai-call"></span></a>
                 <a href="#"><span class="mai-logo-whatsapp"></span></a>
               </div>
             </div>
             <div class="body">
-              <p class="text-xl mb-0">Dr. Stein Albert</p>
-              <span class="text-sm text-grey">Cardiology</span>
+              <p class="text-xl mb-0">Dr. Stella Alberto</p>
+              <span class="text-sm text-grey">Cardiologia</span>
             </div>
           </div>
         </div>
         <div class="item">
           <div class="card-doctor">
             <div class="header">
-              <img src="../assets/img/doctors/doctor_2.jpg" alt="">
+              <img src="../assets/img/doctors/doctor_2.png" alt="">
               <div class="meta">
                 <a href="#"><span class="mai-call"></span></a>
                 <a href="#"><span class="mai-logo-whatsapp"></span></a>
               </div>
             </div>
             <div class="body">
-              <p class="text-xl mb-0">Dr. Alexa Melvin</p>
+              <p class="text-xl mb-0">Dr. Alexandre Mario</p>
               <span class="text-sm text-grey">Dental</span>
             </div>
           </div>
@@ -212,45 +212,45 @@
         <div class="item">
           <div class="card-doctor">
             <div class="header">
-              <img src="../assets/img/doctors/doctor_3.jpg" alt="">
+              <img src="../assets/img/doctors/doctor_3.png" alt="">
               <div class="meta">
                 <a href="#"><span class="mai-call"></span></a>
                 <a href="#"><span class="mai-logo-whatsapp"></span></a>
               </div>
             </div>
             <div class="body">
-              <p class="text-xl mb-0">Dr. Rebecca Steffany</p>
-              <span class="text-sm text-grey">General Health</span>
+              <p class="text-xl mb-0">Dr. Rafaela Brito</p>
+              <span class="text-sm text-grey">Saúde geral</span>
             </div>
           </div>
         </div>
         <div class="item">
           <div class="card-doctor">
             <div class="header">
-              <img src="../assets/img/doctors/doctor_3.jpg" alt="">
+              <img src="../assets/img/doctors/doctor_3.png" alt="">
               <div class="meta">
                 <a href="#"><span class="mai-call"></span></a>
                 <a href="#"><span class="mai-logo-whatsapp"></span></a>
               </div>
             </div>
             <div class="body">
-              <p class="text-xl mb-0">Dr. Rebecca Steffany</p>
-              <span class="text-sm text-grey">General Health</span>
+              <p class="text-xl mb-0">Dr. Rafaela Brito</p>
+              <span class="text-sm text-grey">Saúde geral</span>
             </div>
           </div>
         </div>
         <div class="item">
           <div class="card-doctor">
             <div class="header">
-              <img src="../assets/img/doctors/doctor_3.jpg" alt="">
+              <img src="../assets/img/doctors/doctor_3.png" alt="">
               <div class="meta">
                 <a href="#"><span class="mai-call"></span></a>
                 <a href="#"><span class="mai-logo-whatsapp"></span></a>
               </div>
             </div>
             <div class="body">
-              <p class="text-xl mb-0">Dr. Rebecca Steffany</p>
-              <span class="text-sm text-grey">General Health</span>
+              <p class="text-xl mb-0">Dr. Rafaela Brito</p>
+              <span class="text-sm text-grey">Saúde geral</span>
             </div>
           </div>
         </div>
@@ -268,12 +268,12 @@
               <div class="post-category">
                 <a href="#">Covid19</a>
               </div>
-              <a href="blog-details.html" class="post-thumb">
+              <a href="#" class="post-thumb">
                 <img src="../assets/img/blog/blog_1.jpg" alt="">
               </a>
             </div>
             <div class="body">
-              <h5 class="post-title"><a href="blog-details.html">Lista de países sem caso de Coronavírus</a></h5>
+              <h5 class="post-title"><a href="#">Lista de países sem caso de Coronavírus</a></h5>
               <div class="site-info">
                 <div class="avatar mr-2">
                   <div class="avatar-img">
@@ -292,12 +292,12 @@
               <div class="post-category">
                 <a href="#">Covid19</a>
               </div>
-              <a href="blog-details.html" class="post-thumb">
+              <a href="#" class="post-thumb">
                 <img src="../assets/img/blog/blog_2.jpg" alt="">
               </a>
             </div>
             <div class="body">
-              <h5 class="post-title"><a href="blog-details.html">Sala de Recuperação: Novidades além da pandemia</a></h5>
+              <h5 class="post-title"><a href="#">Sala de Recuperação: Novidades além da pandemia</a></h5>
               <div class="site-info">
                 <div class="avatar mr-2">
                   <div class="avatar-img">
@@ -316,18 +316,18 @@
               <div class="post-category">
                 <a href="#">Covid19</a>
               </div>
-              <a href="blog-details.html" class="post-thumb">
+              <a href="#" class="post-thumb">
                 <img src="../assets/img/blog/blog_3.jpg" alt="">
               </a>
             </div>
             <div class="body">
-              <h5 class="post-title"><a href="blog-details.html">Qual é o impacto de comer muito açúcar?</a></h5>
+              <h5 class="post-title"><a href="#">Qual é o impacto de comer muito açúcar?</a></h5>
               <div class="site-info">
                 <div class="avatar mr-2">
                   <div class="avatar-img">
                     <img src="../assets/img/person/person_2.jpg" alt="">
                   </div>
-                  <span>Diego Simao</span>
+                  <span>Alexandre Mario</span>
                 </div>
                 <span class="mai-time"></span> 2 meses
               </div>
@@ -336,7 +336,7 @@
         </div>
 
         <div class="col-12 text-center mt-4 wow zoomIn">
-          <a href="blog.html" class="btn btn-primary">Leia Mais...</a>
+          <a href="#" class="btn btn-primary">Leia Mais...</a>
         </div>
 
       </div>
@@ -385,7 +385,7 @@
     <div class="container">
       <div class="row px-md-3">
         <div class="col-sm-6 col-lg-3 py-3">
-          <h5>Company</h5>
+          <h5>Empresa</h5>
           <ul class="footer-menu">
             <li><a href="#">Sobre nos</a></li>
             <li><a href="#">Careira</a></li>
@@ -428,7 +428,7 @@
 
       <hr>
 
-      <p id="copyright">Copyright &copy; 2023 Kelseny Brito. Todos Direitos Reservados</p>
+      <p id="copyright">Copyright &copy; 2023 Kelsny Brito. Todos Direitos Reservados</p>
     </div>
   </footer>
 
