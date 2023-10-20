@@ -35,22 +35,40 @@
 
         <!-- partial -->
 	   <div class="container-fluid page-body-wrapper">
+
+
+
 	   	<div class="container pt-5" >
-	   		<form>
+
+	   		  	@if(session()->has('message'))
+
+	   		  	<div class="alert alert-success alert-dismissible fade show" role="alert">
+					  	{{session()->get('message')}}
+					  <button type="button" class="btn-close " data-bs-dismiss="alert" aria-label="Close">X</button>
+					</div>
+						  		
+				   	@endif
+
+
+	   		<form action="{{url('upload_doctor')}}" method="POST" enctype="multipart/form-data">
+
+	   			@csrf
+
+	   			
 			  <div class="mb-3" >
 			    <label for="nome" class="form-label">Nome do Doctor</label>
-			    <input id="nome" name="nome" placeholder="Introduza o nome..." type="text" class="form-control bg-black text-white">
+			    <input required id="nome" name="nome" placeholder="Introduza o nome..." type="text" class="form-control bg-black text-white">
 			  </div>
 
 			  <div class="mb-3" >
 			    <label for="telefone" class="form-label">Telefone/Celular</label>
-			    <input id="telefone" name="telefone" placeholder="Introduza o numero..." type="number" class="form-control bg-black text-white">
+			    <input required id="telefone" name="telefone" placeholder="Introduza o numero..." type="number" class="form-control bg-black text-white">
 			  </div>
 
 			  <div class="mb-3" >
 
 			   	<label for="especialidade ">Especialidade</label>
-					  <select id="especialidade" name="especialidade" class="form-select bg-black text-white">
+					  <select required id="especialidade" name="especialidade" class="form-select bg-black text-white">
 					  	<option selected disabled>--Selecione--</option>
 					    <option value="geral">Geral</option>
 					    <option value="cardiologista">Cardiologista</option>
@@ -66,16 +84,16 @@
 
 			  <div class="mb-3" >
 			    <label for="sala" class="form-label">Sala do Doctor</label>
-			    <input id="sala" name="sala" placeholder="Introduza o numero da sala..." type="text" class="form-control bg-black text-white">
+			    <input required id="sala" name="sala" placeholder="Introduza o numero da sala..." type="text" class="form-control bg-black text-white">
 			  </div>
 
 			  <div class="mb-3">
 				  <label for="imagem" class="form-label">Faca upload da imagem: </label>
-				  <input class="form-control-sm bg-black" type="file" name="imagem" id="imagem">
+				  <input required class="form-control-sm bg-black" type="file" name="imagem" id="imagem">
 				</div>
 
 			  <button type="submit" class="btn btn-primary">Submit</button>
-			  
+
 			</form>
 	   	</div>
 	   </div>
