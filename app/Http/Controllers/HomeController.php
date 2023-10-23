@@ -77,4 +77,29 @@ class HomeController extends Controller
         return redirect()->back()->with('message','Consulta Submetida com sucesso, iremos entrar em contacto brevemente');
 
     }
+
+    public function minhasconsultas(){
+
+
+        if (Auth::id()) {
+            
+        $userid = Auth::user()->id;
+        $appoint = consultas::where('user_id',$userid)->get();
+
+        return view('user.minhas_consultas',compact('appoint'));
+
+        }
+       
+
+        else {
+            return redirect()->back();
+        }
+    }
+
+    public function cancelarConsulta($id){
+        $data = consultas::find($id);
+        $data->delete();
+
+        return redirect()->back();
+    }
 }

@@ -36,3 +36,7 @@ Route::get('/adicionar_doctor_view',[AdminController::class,'addview']);
 Route::post('/upload_doctor',[AdminController::class,'upload']);
 
 Route::post('/consulta',[HomeController::class,'consulta']);
+
+Route::get('/minhasconsultas',[HomeController::class,'minhasconsultas']);
+
+Route::get('/cancelar_consulta/{id}',[HomeController::class,'cancelarConsulta']);
