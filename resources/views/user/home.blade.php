@@ -113,6 +113,16 @@
     </nav>
   </header>
 
+
+            @if(session()->has('message'))
+          <div class="alert alert-success alert-dismissible fade show" role="alert">
+              {{session()->get('message')}}
+            <button type="button" class="btn-close " data-bs-dismiss="alert" aria-label="Close">X</button>
+          </div>
+                  
+            @endif
+
+
   <div class="page-hero bg-image overlay-dark" style="background-image: url(../assets/img/bg_image_1.jpg);">
     <div class="hero-section">
       <div class="container text-center wow zoomIn">

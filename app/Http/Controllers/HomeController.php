@@ -7,6 +7,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Models\Doctor;
+use App\Models\Consultas;
 
 class HomeController extends Controller
 {
@@ -51,6 +52,29 @@ class HomeController extends Controller
     $request->session()->regenerateToken();
  
     return redirect('/');
+
+    }
+
+    public function consulta(Request $request){
+
+        $data = new consultas;
+
+        $data->nome = $request->nome;
+        $data->email = $request->email;
+        $data->data = $request->data;
+        $data->doctor = $request->doctor;
+        $data->telefone = $request->telefone;
+        $data->mensagem = $request->mensagem;
+        $data->status = 'Em progresso';
+
+        if(Auth::id()){
+            $data->user_id = Auth::user()->id;
+
+        }
+
+        $data->save();
+
+        return redirect()->back()->with('message','Consulta Submetida com sucesso, iremos entrar em contacto brevemente');
 
     }
 }
