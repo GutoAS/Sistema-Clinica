@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Doctor;
+use App\Models\Consultas;
 
 class AdminController extends Controller
 {
@@ -26,6 +27,37 @@ class AdminController extends Controller
         $doctor->save();
 
         return redirect()->back()->with('message', "Doctor Adicionado com Sucesso");
+
+    }
+
+    public function mostrarConsultas(){
+
+        $data = consultas::all();
+
+        return view('admin.mostrar_consulta', compact('data'));
+    }
+
+    public function approved($id){
+
+        $data=consultas::find($id);
+
+        $data->status = "Aprovado";
+
+        $data->save();
+
+        return redirect()->back();
+
+    }
+
+     public function canceled($id){
+
+        $data=consultas::find($id);
+
+        $data->status = "Cancelado";
+
+        $data->save();
+
+        return redirect()->back();
 
     }
 }

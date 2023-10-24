@@ -10,8 +10,7 @@
             </button>
             <ul class="navbar-nav w-100">
            <!-- logout -->
-           <x-app-layout>
-			     </x-app-layout>
+           <a class="btn btn-primary ml-lg-3" href="{{route('login.logout')}}">Sair</a>
            <!-- endlogout -->
             </ul>
             <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">

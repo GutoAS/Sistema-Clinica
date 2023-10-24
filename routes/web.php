@@ -40,3 +40,11 @@ Route::post('/consulta',[HomeController::class,'consulta']);
 Route::get('/minhasconsultas',[HomeController::class,'minhasconsultas']);
 
 Route::get('/cancelar_consulta/{id}',[HomeController::class,'cancelarConsulta']);
+
+Route::get('/mostrar_consultas',[AdminController::class,'mostrarConsultas']);
+
+Route::get('/approved/{id}',[AdminController::class,'approved']);
+
+Route::get('/canceled/{id}',[AdminController::class,'canceled']);
+
+
