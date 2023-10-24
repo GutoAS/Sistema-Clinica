@@ -39,5 +39,14 @@
               <span class="menu-title">Mostrar Consultas</span>
             </a>
           </li>
+
+           <li class="nav-item menu-items">
+            <a class="nav-link" href="{{url('mostrar_doctores')}}">
+              <span class="menu-icon">
+                <i class="mdi mdi-contacts"></i>
+              </span>
+              <span class="menu-title">Mostrar Doctores</span>
+            </a>
+          </li>
         </ul>
       </nav>

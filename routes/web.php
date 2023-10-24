@@ -48,3 +48,8 @@ Route::get('/approved/{id}',[AdminController::class,'approved']);
 Route::get('/canceled/{id}',[AdminController::class,'canceled']);
 
 
+Route::get('/mostrar_doctores',[AdminController::class,'mostrarDoctores']);
+
+Route::get('/remover_doctor/{id}',[AdminController::class,'removerDoctor']);
+
+
